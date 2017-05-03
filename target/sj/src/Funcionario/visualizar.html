@@ -1,0 +1,322 @@
+
+<div class="jumbotron">
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-7 col-md-offset-3">
+              <div class="login-panel panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Funcionario</h3>
+                  </div>
+                  <div class="panel-body">
+
+
+                    <button ng-hide="showAddEditUser" type="button" value="Voltar" onClick="history.go(-1)" class="btn btn-warning btn-lg  aw-btn-full-width">Voltar
+                      <span  class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+                    </button>
+                <button ng-hide="!showAddEditUser" type="button" class="btn btn-success btn-s"  ng-click="hide()">Voltar</button>
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal Dialog -->
+                           <div class="modal fade" id="confirmSave" role="dialog" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                                 <div class="modal-header">
+                                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                   <h4 class="modal-title">Salvar FuntionÃ¡rio</h4>
+                                 </div>
+                                 <div class="modal-body">
+                                   <p>Deseja Salvar ?</p>
+                                 </div>
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                   <button type="button" class="btn btn-danger" data-dismiss="modal" id="confirm" ng-click="saveFile(fd)">Salvar</button>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+
+  <form  role="form1"  ng-hide="!showAddEditUser"  name="form1" role="form1" >
+
+
+
+    <div class="form-group">
+               <label>
+                    CIDADE:
+                           </label>
+                                  <font color="#B03060"><h4 ng-bind="fd.localidade"></h4></font>
+
+
+       </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+                           <label>
+                                ESTADO:
+                                       </label>
+                                              <font color="#B03060"><h4 ng-bind="fd.uf"></h4></font>
+
+
+                   </div>
+
+
+
+
+                <div class="form-group">
+                           <label>
+                                BAIRRO:
+                                       </label>
+                                              <font color="#B03060"><h4 ng-bind="fd.bairro"></h4></font>
+
+
+                   </div>
+
+
+
+
+                <div class="form-group">
+                           <label>
+                                LOGRADOURO:
+                                       </label>
+                                              <font color="#B03060"><h4 ng-bind="fd.logradouro"></h4></font>
+
+
+                   </div>
+
+
+
+                <div class="form-group">
+                           <label>
+                                  NÃšMERO:
+                                       </label>
+                                              <font color="#B03060"><h4 ng-bind="fd.numero"></h4></font>
+
+
+                   </div>
+
+
+
+
+
+                <div class="form-group">
+                           <label>
+                                COMPLEMENTO:
+                                       </label>
+                                              <font color="#B03060"><h4 ng-bind="fd.complemento"></h4></font>
+
+
+                   </div>
+
+
+
+<div>
+        <center  >
+
+          <label>
+            AVATAR:
+          </label>
+
+          <img ng-src="{{fd.mimeType}},{{fd.file}}" width="250" class="img-circle img80_80" />
+
+
+
+        </center>
+</div>
+     <br />
+
+
+
+
+
+  <div class="form-group">
+             <label>
+                  FUNCIONÃ�RIO
+                         </label>
+                                <font color="#B03060"><h4 ng-bind="fd.funcionario"></h4></font>
+
+
+     </div>
+
+
+     <div class="form-group">
+                <label>
+                      EMAIL:
+                            </label>
+                                   <font color="#B03060"><h4 ng-bind="fd.email"></h4></font>
+
+
+        </div>
+
+
+
+           <div class="form-group">
+                      <label>
+                            TELEFONE
+                                  </label>
+                                         <font color="#B03060"><h4 ng-bind="fd.fone"></h4></font>
+
+
+              </div>
+
+
+  <div class="form-group">
+             <label>
+                    <img ng-src="resources/images/CPF.jpg" width="70" class="img img585_585" />
+                         </label>
+                                <font color="#B03060"><h4 ng-bind="fd.cpf"></h4></font>
+
+
+     </div>
+
+
+          <div class="form-group">
+            <div >
+
+               <label>RG</label><font color="#B03060"><h4 ng-bind="fd.rg"></h4></font>
+
+                  </div>
+          </div>
+
+
+          <div class="form-group">
+                     <label>
+                          EMPRESA:
+                                 </label>
+                                        <font color="#B03060"><h4 ng-bind="fd.empresa"></h4></font>
+
+
+             </div>
+
+
+             <div class="form-group">
+                        <label>
+                              FUNÃ‡ÃƒO:
+                                    </label>
+                                           <font color="#B03060"><h4 ng-bind="fd.funcao"></h4></font>
+
+
+                </div>
+
+
+               <button type="button" class="btn btn-success btn-s"  ng-click="hide()">Voltar</button>
+
+
+
+
+
+
+   </form>
+
+
+      <!--<pre>{{f|json}}</pre>  ng-disabled="form1.$invalid"-->
+
+
+<br><br>
+
+  <div class="row">
+                    <div class="col-lg-50">
+                      <div class="table-responsive" ng-hide="showAddEditUser">
+                            <table class="table table-bordered table-hover table-striped">
+
+                              <div class="blocktext">
+
+                                <div >
+
+                                 <div class="form-group input-group">
+
+                                <input type="text" class="form-control"  ng-model="busca"
+                                 placeholder="Pesquise uma Descricao: " size="30"	maxlength="30" />
+                                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+
+
+                                   </div>
+                                 </div>
+                                </div>
+
+
+                             <br/>
+                             <thead>
+                                    <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Fone</th>
+
+                                    <!--
+
+                                    <th>CPF</th>
+                                    <th>RG</th>
+
+                                    -->
+                                    <th>Empresa</th>
+                                    <th>FunÃ§Ã£o</th>
+
+                                    <th>CIDADE</th>
+                                    <th>BAIRRO</th>
+                                    <th>UF</th>
+                                    <!--
+                                      <th>NUMERO</th>
+                                    <th>CEP</th>
+                                    <th>ENDEREÃ‡O</th>
+                                    <th>COMPLEMENTO</th>
+                                    <th>MIMETYPE</th>
+
+                                  -->
+                                  <th>VISUALIZAR</th>
+
+                                      </tr>
+                                </thead>
+                          <tbody>
+                            <!--  ng-hide="showAddEditformulario" ng-hide="!showTable" ng-click="show()"
+                            <tr ng-repeat="f in fs|filter:busca|orderBy:'funcionario'" >
+                           -->
+
+
+                              <tr dir-paginate="fd in fds|filter:busca |orderBy:'funcionario'| orderBy:sortKey:reverse|itemsPerPage:4">
+
+                              <td>{{ fd.funcionario }}</td>
+                              <td>{{ fd.email }}</td>
+                              <td>{{ fd.fone }}</td>
+
+                            <!--
+
+
+                              <td>{{f.cpf }}</td>
+                              <td>{{ f.rg }}</td>
+                              <td>{{f.cep }}</td>
+                              <td>{{ fd.logradouro }}</td>
+                              <td>{{ fd.numero }}</td>
+                            -->
+                              <td>{{ fd.empresa }}</td>
+                              <td>{{ fd.funcao }}</td>
+                              <td>{{fd.localidade }}</td>
+                              <td>{{fd.bairro }}</td>
+                              <td>{{fd.uf }}</td>
+                              <!--
+                              <td>{{fd.complemento }}</td>
+                              <td> <img ng-src="{{fd.mimeType}},{{fd.file}}" width="50" /></td>
+                            -->
+
+                              <td ><button ng-click="editFile(fd)" class="btn btn-defaut btn-s">
+                              check    <span  class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></button></td>
+
+                            </tr>
+                          </tbody>
+                        </table>
+
+    <dir-pagination-controls max-size="4" boundary-links="true"></dir-pagination-controls>
+
+  </div>
+</div>

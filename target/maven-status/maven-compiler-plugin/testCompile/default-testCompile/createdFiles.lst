@@ -1,0 +1,5 @@
+org\condominio\sj\backand\test\repositories\UserRepositoryTest.class
+org\condominio\sj\backand\test\utils\AppContextTest.class
+org\condominio\sj\backand\test\utils\AbstractTest.class
+org\condominio\sj\backand\test\repositories\UserPermissionRepositoryTest.class
+org\condominio\sj\backand\test\repositories\PermissionRepositoryTest.class

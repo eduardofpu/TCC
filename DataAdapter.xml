@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>Heroku</name><driver>org.postgresql.Driver</driver><username>hhyuqvjycyfvdz</username><password>21cd795a639e8ed8928a4e0ff6bc35a38563da43219b13697019b0e36d3a3115</password><savePassword>true</savePassword><url>jdbc:postgresql://ec2-54-243-107-66.compute-1.amazonaws.com:5432/dak5o6dhm0at8v</url><database></database><serverAddress></serverAddress></jdbcDataAdapter>

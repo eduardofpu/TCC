@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.condominio.sj.backand.test.repositories.PermissionRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.262 sec - in org.condominio.sj.backand.test.repositories.PermissionRepositoryTest

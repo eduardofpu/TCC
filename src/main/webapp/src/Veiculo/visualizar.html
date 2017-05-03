@@ -1,0 +1,174 @@
+
+
+<div class="jumbotron">
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-7 col-md-offset-3">
+              <div class="login-panel panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Veiculos</h3>
+                  </div>
+                  <div class="panel-body">
+
+                    <button ng-hide="showAddEditUser" type="button" value="Voltar" onClick="history.go(-1)" class="btn btn-warning btn-lg  aw-btn-full-width">Voltar
+                              <span  class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+                            </button>
+
+                  		   <button ng-hide="!showAddEditUser" type="button" class="btn btn-success btn-s"  ng-click="hide()">Voltar</button>
+
+
+
+        <!-- Modal Dialog -->
+                                 <div class="modal fade" id="confirmSave" role="dialog" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                         <h4 class="modal-title">Salvar Veículo</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                         <p>Deseja Salvar ?</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                         <button type="button" class="btn btn-danger" data-dismiss="modal" id="confirm" ng-click="saveVeiculo(v)">Salvar</button>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+
+
+
+  <form ng-hide="!showAddEditUser" name="form1">
+
+
+
+
+
+
+
+    <div class="form-group">
+                             <label>
+                                Descrição do apartamento:
+                                         </label>
+                                                <font color="#B03060"><h4 ng-bind="v.apv.descricao"></h4></font>
+
+
+                     </div>
+
+
+                     <div class="form-group">
+                                              <label>
+                                                   Modelo:
+                                                          </label>
+                                                                 <font color="#B03060"><h4 ng-bind="v.modelo"></h4></font>
+
+
+        </div>
+          <div class="form-group">
+                       <label>
+                        Cor:
+                   </label>
+            <font color="#B03060"><h4 ng-bind="v.cor"></h4></font>
+
+
+           </div>
+               <div class="form-group">
+                <label>
+                Placa:
+                        </label>
+                 <font color="#B03060"><h4 ng-bind="v.placa"></h4></font>
+
+
+                    </div>
+
+                  <div class="form-group">
+                                <label>
+                                Motorista:
+                                 </label>
+                            <font color="#B03060"><h4 ng-bind="v.motorista"></h4></font>
+
+         </div>
+
+
+                     <div class="form-group">
+                                        <label>
+                                     Cnh:
+                              </label>
+                     <font color="#B03060"><h4 ng-bind="v.cnh"></h4></font>
+
+              </div>
+
+
+
+  </form>
+<!-- <pre>{{v|json}}</pre> -->
+<br><br>
+
+  <div class="row">
+                    <div class="col-lg-50">
+
+                        <div class="table-responsive" ng-hide="showAddEditUser">
+                            <table class="table table-bordered table-hover table-striped">
+
+                              <div class="blocktext">
+
+                                <div >
+
+                                 <div class="form-group input-group">
+
+                                <input type="text" class="form-control"  ng-model="busca"
+                                 placeholder="Pesquise uma Descricao: " size="30"	maxlength="30" />
+                                 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+
+
+                                   </div>
+                                 </div>
+                                </div>
+
+
+                             <br/>
+
+         <thead>
+            <tr>
+               <th>Modelo</th>
+               <th>Cor</th>
+               <th>Placa</th>
+               <th>Motorista</th>
+               <th>CNH</th>
+                <th>Apartamento</th>
+
+               <th>Editar</th>
+               <th>Deletar</th>
+
+        </tr>
+      </thead>
+      <tbody>
+      <!--  <tr ng-repeat="v in vs|filter:busca" class="active">-->
+        <tr dir-paginate="v in vs|filter:busca |orderBy:'apv.descricao'|orderBy:sortKey:reverse|itemsPerPage:4">
+
+
+          <td>{{ v.modelo }}</td>
+          <td>{{ v.cor }}</td>
+          <td>{{ v.placa }}</td>
+          <td>{{ v.motorista }}</td>
+          <td>{{ v.cnh }}</td>
+          <td>{{ v.apv.descricao }}</td>
+
+
+
+          <td ><button ng-click="editVeiculo(v)" class="btn btn-defaut btn-s">
+                             check    <span  class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></button></td>
+
+
+
+
+        </tr>
+      </tbody>
+    </table>
+    <dir-pagination-controls max-size="4" boundary-links="true"></dir-pagination-controls>
+
+  </div>
+</div>
+</div>

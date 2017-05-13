@@ -3853,3 +3853,273 @@ Caused by: java.lang.IllegalStateException: Tomcat connector in failed state
 2017-05-01 10:47:53.574  INFO 5452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2017-05-01 10:47:53.584  INFO 5452 --- [main] org.condominio.sj.backand.AppMain        : Started AppMain in 12.419 seconds (JVM running for 13.072)
 2017-05-01 10:48:20.239  INFO 5452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-13 00:56:57.564  INFO 3136 --- [main] org.condominio.sj.backand.AppMain        : Starting AppMain on Delfino with PID 3136 (D:\Template3.0\Backend\condominio-sj-backend\target\classes started by Eduardo in D:\Template3.0\Backend\condominio-sj-backend)
+2017-05-13 00:56:57.594  INFO 3136 --- [main] org.condominio.sj.backand.AppMain        : No active profile set, falling back to default profiles: default
+2017-05-13 00:56:57.784  INFO 3136 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6591f517: startup date [Sat May 13 00:56:57 BRT 2017]; root of context hierarchy
+2017-05-13 00:57:01.317  INFO 3136 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'applicationProperty' with a different definition: replacing [Generic bean: class [org.condominio.sj.backand.z.utils.ApplicationProperty]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\Template3.0\Backend\condominio-sj-backend\target\classes\org\condominio\sj\backand\z\utils\ApplicationProperty.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appContext; factoryMethodName=getApplicationProperty; initMethodName=null; destroyMethodName=(inferred); defined in org.condominio.sj.backand.z.utils.AppContext]
+2017-05-13 00:57:01.665  INFO 3136 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-05-13 00:57:03.088  INFO 3136 --- [main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from URL [jar:file:/C:/Users/Eduardo/.m2/repository/org/springframework/integration/spring-integration-core/4.2.5.RELEASE/spring-integration-core-4.2.5.RELEASE.jar!/META-INF/spring.integration.default.properties]
+2017-05-13 00:57:03.092  INFO 3136 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-05-13 00:57:03.932  INFO 3136 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-05-13 00:57:03.940  INFO 3136 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-05-13 00:57:04.006  INFO 3136 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-13 00:57:04.283  INFO 3136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$957f94a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-13 00:57:06.669  INFO 3136 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-13 00:57:06.726  INFO 3136 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-13 00:57:06.738  INFO 3136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-05-13 00:57:07.270  INFO 3136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-13 00:57:08.304  INFO 3136 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-13 00:57:08.319  INFO 3136 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-13 00:57:08.320  INFO 3136 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-13 00:57:08.320  INFO 3136 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-13 00:57:08.328  INFO 3136 --- [localhost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-13 00:57:08.329  INFO 3136 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'headerHandler' to: [/*]
+2017-05-13 00:57:08.329  INFO 3136 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-13 00:57:09.974  INFO 3136 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-13 00:57:10.056  INFO 3136 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-13 00:57:10.279  INFO 3136 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-05-13 00:57:10.283  INFO 3136 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-13 00:57:10.285  INFO 3136 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-13 00:57:10.818  INFO 3136 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-05-13 00:57:14.688  INFO 3136 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-13 00:57:15.185  INFO 3136 --- [localhost-startStop-1] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-13 00:57:16.536  INFO 3136 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-13 00:57:16.536  INFO 3136 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2017-05-13 00:57:16.538  INFO 3136 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2017-05-13 00:57:18.866  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_agendamento
+2017-05-13 00:57:18.867  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, contador, hora_prevista, hora_entrada, agenda_user_id, agenda_data, agenda_empresa, agenda_descricao, hora_saida]
+2017-05-13 00:57:18.867  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_67dm9twi3leycq7f53gg41s20]
+2017-05-13 00:57:18.867  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_67dm9twi3leycq7f53gg41s20, primary]
+2017-05-13 00:57:19.768  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_alugar_apartamento
+2017-05-13 00:57:19.769  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, alugar_ape_user_id, pk_id]
+2017-05-13 00:57:19.769  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_3l0phwy0e5vxfjhx57b0i56u4]
+2017-05-13 00:57:19.770  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_3l0phwy0e5vxfjhx57b0i56u4, primary]
+2017-05-13 00:57:20.467  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_alugar_garagem
+2017-05-13 00:57:20.467  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [cnh_cliente, pk_id, modelo_veiculo_cliente, cor_veiculo_cliente, aluguel_user_id, placa_veiculo_cliente, descricao_cliente, data_final_cliente, motorista_cliente, data_inicial_cliente]
+2017-05-13 00:57:20.467  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_fp2cjc59435odd333r86lyf31]
+2017-05-13 00:57:20.467  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_fp2cjc59435odd333r86lyf31, primary]
+2017-05-13 00:57:20.793  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_apartamento
+2017-05-13 00:57:20.794  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [descricao_apartamento, pk_id, fone_proprietario, nome_proprietario, email_proprietario]
+2017-05-13 00:57:20.794  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:20.794  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_s38lyy6ynpg4rjjerkhe9xbno, uk_pl4dpgeby2dddvs9vc13674ra, primary]
+2017-05-13 00:57:21.018  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_bicicleta
+2017-05-13 00:57:21.018  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [dono_bicicleta, pk_id, cor_bicicleta, ap_id_b, modelo_bicicleta]
+2017-05-13 00:57:21.018  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_81kbnk9vh1b37itcqt7v74d03]
+2017-05-13 00:57:21.018  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_81kbnk9vh1b37itcqt7v74d03, primary]
+2017-05-13 00:57:21.148  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_bicicleta_ex
+2017-05-13 00:57:21.148  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, dono, datamudanca, cor, ap_id_b, modelo]
+2017-05-13 00:57:21.148  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_tqu1h1gdmdopvrkdlxssr2yuk]
+2017-05-13 00:57:21.149  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_tqu1h1gdmdopvrkdlxssr2yuk, primary]
+2017-05-13 00:57:21.442  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_caixa
+2017-05-13 00:57:21.443  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, pk_id]
+2017-05-13 00:57:21.443  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:21.443  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 00:57:21.696  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_entradacaixa
+2017-05-13 00:57:21.696  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, pk_id, register_date, gerente]
+2017-05-13 00:57:21.696  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_8cldhfqf6bfogkrnkasl1e5hu]
+2017-05-13 00:57:21.697  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_8cldhfqf6bfogkrnkasl1e5hu, primary]
+2017-05-13 00:57:21.857  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_foto_alugar_ape
+2017-05-13 00:57:21.857  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, file, mime_type, ap_id_alugar, tb_comodo, fotos_ape_id]
+2017-05-13 00:57:21.857  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_bxwo6ey4jibqvrjo3tlfrcyl5, fk_2drew7u4wa88h0956k3ce5dn7]
+2017-05-13 00:57:21.857  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_bxwo6ey4jibqvrjo3tlfrcyl5, fk_2drew7u4wa88h0956k3ce5dn7, primary]
+2017-05-13 00:57:21.964  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_foto_venda_ape
+2017-05-13 00:57:21.965  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, file, userape_id, mime_type, tb_venda_comodo, apid_alugar]
+2017-05-13 00:57:21.965  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_tbf4ktem7pww212fr4ig5bi2n, fk_n1bfkhdafvfdgk3bvjos7b6fv]
+2017-05-13 00:57:21.965  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_tbf4ktem7pww212fr4ig5bi2n, fk_n1bfkhdafvfdgk3bvjos7b6fv, primary]
+2017-05-13 00:57:22.293  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_funcionario
+2017-05-13 00:57:22.294  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [funcao_funcionario, localidade_f, id_funcionario, empresa_funcionario, nome_funcionario, logradouro_f, uf_f, fone_funcionario, file, bairro_f, mime_type, cpf_funcionario, email_funcionario, rg_funcionario, cep_f, numero_f, complemento_f]
+2017-05-13 00:57:22.294  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:22.294  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_2xnc86xn3kky30p0ufd36x68t, uk_41rxtr6e6xvseala25hb5ar2g, uk_1wmpgqe5rboe4sq7ip2i771x0, primary]
+2017-05-13 00:57:22.436  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_morador
+2017-05-13 00:57:22.436  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [ap_id, pk_id, fone_morador, nome_morador, email_morador]
+2017-05-13 00:57:22.436  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_shrn02y9wd78ag9d5r1kuwq9o]
+2017-05-13 00:57:22.437  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_shrn02y9wd78ag9d5r1kuwq9o, uk_bgqtcr5odelryhkq584a8jaih, uk_2k0n0u4dwfcee7bi1g8ucu5t7, primary]
+2017-05-13 00:57:22.608  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_morador_ex
+2017-05-13 00:57:22.608  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [fone, ap_id, pk_id, datamudanca, nome, email]
+2017-05-13 00:57:22.609  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_ge8il04ecgruq26svta1p43lw]
+2017-05-13 00:57:22.610  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_ge8il04ecgruq26svta1p43lw, primary]
+2017-05-13 00:57:22.831  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_permission
+2017-05-13 00:57:22.831  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, role]
+2017-05-13 00:57:22.831  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:22.831  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_rwvnf9dhenmknvljgery79idd, primary]
+2017-05-13 00:57:23.140  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_prestador_servico
+2017-05-13 00:57:23.141  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [cpf_ps, fone_ps, funcao_ps, cep_ps, bairro_ps, numero_ps, nome_ps, logradouro_ps, uf_ps, file, localidade_ps, id_prestador_servico, mime_type, email_ps, complemento_ps, empresa_ps, rg_ps]
+2017-05-13 00:57:23.141  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:23.141  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_9xoev1bwilcohvw3n4p7819lv, uk_3vjbdso7n7vod50fcggk0005u, uk_8qjc6mdimxwbpmaygy9s7as7l, primary]
+2017-05-13 00:57:23.343  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_prestar_conta
+2017-05-13 00:57:23.343  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, tb_empresa, tb_valor_servico, tb_descricao, register_date, tb_funcionario]
+2017-05-13 00:57:23.343  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:23.344  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 00:57:23.468  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_user
+2017-05-13 00:57:23.468  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, pk_id, file, mime_type, name, id_user, email]
+2017-05-13 00:57:23.469  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_7uui42jkdsf7vqmrwd7iyr1sp]
+2017-05-13 00:57:23.469  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_4vih17mube9j7cqyjlfbcrk4m, fk_7uui42jkdsf7vqmrwd7iyr1sp, primary]
+2017-05-13 00:57:23.526  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_user_permission
+2017-05-13 00:57:23.527  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [user_id, permission_id]
+2017-05-13 00:57:23.527  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_l6cvhr5w2r9ff429fa5eqxmyo, fk_44w3gaqxmtfvn2xslng1a5pi0]
+2017-05-13 00:57:23.527  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_l6cvhr5w2r9ff429fa5eqxmyo, primary]
+2017-05-13 00:57:23.599  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_veiculo
+2017-05-13 00:57:23.599  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [modelo_veiculo, pk_id, motorista_veiculo, ap_id_v, cnh_veiculo, cor_veiculo, placa_veiculo]
+2017-05-13 00:57:23.599  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_t4gxmpdhojdm4th1c7n6yv31c]
+2017-05-13 00:57:23.600  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_t4gxmpdhojdm4th1c7n6yv31c, primary]
+2017-05-13 00:57:23.723  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_veiculo_ex
+2017-05-13 00:57:23.724  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, ap_id_v, datamudanca, motorista, cor, cnh, modelo, placa]
+2017-05-13 00:57:23.724  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_l7gkwjmmmnb2bmknqt8f3w3s5]
+2017-05-13 00:57:23.724  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_l7gkwjmmmnb2bmknqt8f3w3s5, primary]
+2017-05-13 00:57:23.851  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_vender_apartamento
+2017-05-13 00:57:23.851  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, vender_ape_user_id, valor]
+2017-05-13 00:57:23.852  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_3occdn9cbhlkqboj2ap8kvqgv]
+2017-05-13 00:57:23.852  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_3occdn9cbhlkqboj2ap8kvqgv, primary]
+2017-05-13 00:57:23.951  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.td_ocorrencia
+2017-05-13 00:57:23.951  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, register_date, tb_registro]
+2017-05-13 00:57:23.951  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 00:57:23.951  INFO 3136 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 00:57:23.952  INFO 3136 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2017-05-13 00:57:26.084  INFO 3136 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.condominio.sj.backand.z.security.HeaderHandler@530d6025, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@864daab, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cb72ecb, org.springframework.security.web.header.HeaderWriterFilter@c24b0ba, org.springframework.security.web.csrf.CsrfFilter@2d1d7f11, org.condominio.sj.backand.z.security.SecurityConfiguration$1@53eff24a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca2f872, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ae2eade, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26730b80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79cb79c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6437598d, org.springframework.security.web.session.SessionManagementFilter@44383ffe, org.springframework.security.web.access.ExceptionTranslationFilter@16801f74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13c49695]
+2017-05-13 00:57:30.961  INFO 3136 --- [main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from URL [jar:file:/C:/Users/Eduardo/.m2/repository/org/springframework/integration/spring-integration-core/4.2.5.RELEASE/spring-integration-core-4.2.5.RELEASE.jar!/META-INF/spring.integration.default.properties]
+2017-05-13 00:57:31.240  INFO 3136 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-05-13 00:57:31.622  INFO 3136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-13 00:57:31.692  INFO 3136 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-05-13 00:57:31.693  INFO 3136 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-05-13 00:57:31.693  INFO 3136 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2017-05-13 00:57:31.694  INFO 3136 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-05-13 00:57:35.302  INFO 3136 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-13 00:57:35.307  INFO 3136 --- [main] org.condominio.sj.backand.AppMain        : Started AppMain in 38.292 seconds (JVM running for 39.133)
+2017-05-13 00:58:10.957  INFO 3136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-13 01:04:17.997  INFO 5860 --- [main] org.condominio.sj.backand.AppMain        : Starting AppMain on Delfino with PID 5860 (D:\Template3.0\Backend\condominio-sj-backend\target\classes started by Eduardo in D:\Template3.0\Backend\condominio-sj-backend)
+2017-05-13 01:04:18.002  INFO 5860 --- [main] org.condominio.sj.backand.AppMain        : No active profile set, falling back to default profiles: default
+2017-05-13 01:04:18.092  INFO 5860 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6591f517: startup date [Sat May 13 01:04:18 BRT 2017]; root of context hierarchy
+2017-05-13 01:04:20.769  INFO 5860 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'applicationProperty' with a different definition: replacing [Generic bean: class [org.condominio.sj.backand.z.utils.ApplicationProperty]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\Template3.0\Backend\condominio-sj-backend\target\classes\org\condominio\sj\backand\z\utils\ApplicationProperty.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appContext; factoryMethodName=getApplicationProperty; initMethodName=null; destroyMethodName=(inferred); defined in org.condominio.sj.backand.z.utils.AppContext]
+2017-05-13 01:04:20.883  INFO 5860 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-05-13 01:04:21.535  INFO 5860 --- [main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from URL [jar:file:/C:/Users/Eduardo/.m2/repository/org/springframework/integration/spring-integration-core/4.2.5.RELEASE/spring-integration-core-4.2.5.RELEASE.jar!/META-INF/spring.integration.default.properties]
+2017-05-13 01:04:21.540  INFO 5860 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-05-13 01:04:22.030  INFO 5860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-05-13 01:04:22.141  INFO 5860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-05-13 01:04:22.162  INFO 5860 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-05-13 01:04:22.307  INFO 5860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$957f94a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-13 01:04:23.414  INFO 5860 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-13 01:04:23.436  INFO 5860 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-13 01:04:23.438  INFO 5860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-05-13 01:04:23.757  INFO 5860 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-13 01:04:24.556  INFO 5860 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-13 01:04:24.559  INFO 5860 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-13 01:04:24.559  INFO 5860 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-13 01:04:24.559  INFO 5860 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-13 01:04:24.563  INFO 5860 --- [localhost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-13 01:04:24.563  INFO 5860 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'headerHandler' to: [/*]
+2017-05-13 01:04:24.565  INFO 5860 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-13 01:04:25.382  INFO 5860 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-13 01:04:25.396  INFO 5860 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-13 01:04:25.532  INFO 5860 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-05-13 01:04:25.535  INFO 5860 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-13 01:04:25.537  INFO 5860 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-13 01:04:25.848  INFO 5860 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-05-13 01:04:27.025  INFO 5860 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-13 01:04:27.344  INFO 5860 --- [localhost-startStop-1] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-13 01:04:28.081  INFO 5860 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-13 01:04:28.081  INFO 5860 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2017-05-13 01:04:28.084  INFO 5860 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2017-05-13 01:04:28.167  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_agendamento
+2017-05-13 01:04:28.167  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, contador, hora_prevista, hora_entrada, agenda_user_id, agenda_data, agenda_empresa, agenda_descricao, hora_saida]
+2017-05-13 01:04:28.167  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_67dm9twi3leycq7f53gg41s20]
+2017-05-13 01:04:28.167  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_67dm9twi3leycq7f53gg41s20, primary]
+2017-05-13 01:04:28.177  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_alugar_apartamento
+2017-05-13 01:04:28.178  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, alugar_ape_user_id, pk_id]
+2017-05-13 01:04:28.179  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_3l0phwy0e5vxfjhx57b0i56u4]
+2017-05-13 01:04:28.179  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_3l0phwy0e5vxfjhx57b0i56u4, primary]
+2017-05-13 01:04:28.192  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_alugar_garagem
+2017-05-13 01:04:28.193  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [cnh_cliente, pk_id, modelo_veiculo_cliente, cor_veiculo_cliente, aluguel_user_id, placa_veiculo_cliente, descricao_cliente, data_final_cliente, motorista_cliente, data_inicial_cliente]
+2017-05-13 01:04:28.193  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_fp2cjc59435odd333r86lyf31]
+2017-05-13 01:04:28.193  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_fp2cjc59435odd333r86lyf31, primary]
+2017-05-13 01:04:28.213  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_apartamento
+2017-05-13 01:04:28.214  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [descricao_apartamento, pk_id, fone_proprietario, nome_proprietario, email_proprietario]
+2017-05-13 01:04:28.214  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.214  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_s38lyy6ynpg4rjjerkhe9xbno, uk_pl4dpgeby2dddvs9vc13674ra, primary]
+2017-05-13 01:04:28.225  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_bicicleta
+2017-05-13 01:04:28.225  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [dono_bicicleta, pk_id, cor_bicicleta, ap_id_b, modelo_bicicleta]
+2017-05-13 01:04:28.225  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_81kbnk9vh1b37itcqt7v74d03]
+2017-05-13 01:04:28.225  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_81kbnk9vh1b37itcqt7v74d03, primary]
+2017-05-13 01:04:28.234  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_bicicleta_ex
+2017-05-13 01:04:28.234  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, dono, datamudanca, cor, ap_id_b, modelo]
+2017-05-13 01:04:28.234  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_tqu1h1gdmdopvrkdlxssr2yuk]
+2017-05-13 01:04:28.235  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_tqu1h1gdmdopvrkdlxssr2yuk, primary]
+2017-05-13 01:04:28.243  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_caixa
+2017-05-13 01:04:28.243  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, pk_id]
+2017-05-13 01:04:28.243  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.243  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 01:04:28.256  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_entradacaixa
+2017-05-13 01:04:28.257  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [tb_valor, pk_id, register_date, gerente]
+2017-05-13 01:04:28.258  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_8cldhfqf6bfogkrnkasl1e5hu]
+2017-05-13 01:04:28.262  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_8cldhfqf6bfogkrnkasl1e5hu, primary]
+2017-05-13 01:04:28.276  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_foto_alugar_ape
+2017-05-13 01:04:28.276  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, file, mime_type, ap_id_alugar, tb_comodo, fotos_ape_id]
+2017-05-13 01:04:28.277  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_bxwo6ey4jibqvrjo3tlfrcyl5, fk_2drew7u4wa88h0956k3ce5dn7]
+2017-05-13 01:04:28.277  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_bxwo6ey4jibqvrjo3tlfrcyl5, fk_2drew7u4wa88h0956k3ce5dn7, primary]
+2017-05-13 01:04:28.293  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_foto_venda_ape
+2017-05-13 01:04:28.293  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, file, userape_id, mime_type, tb_venda_comodo, apid_alugar]
+2017-05-13 01:04:28.293  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_tbf4ktem7pww212fr4ig5bi2n, fk_n1bfkhdafvfdgk3bvjos7b6fv]
+2017-05-13 01:04:28.293  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_tbf4ktem7pww212fr4ig5bi2n, fk_n1bfkhdafvfdgk3bvjos7b6fv, primary]
+2017-05-13 01:04:28.310  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_funcionario
+2017-05-13 01:04:28.311  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [funcao_funcionario, localidade_f, id_funcionario, empresa_funcionario, nome_funcionario, logradouro_f, uf_f, fone_funcionario, file, bairro_f, mime_type, cpf_funcionario, email_funcionario, rg_funcionario, cep_f, numero_f, complemento_f]
+2017-05-13 01:04:28.311  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.311  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_2xnc86xn3kky30p0ufd36x68t, uk_41rxtr6e6xvseala25hb5ar2g, uk_1wmpgqe5rboe4sq7ip2i771x0, primary]
+2017-05-13 01:04:28.322  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_morador
+2017-05-13 01:04:28.323  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [ap_id, pk_id, fone_morador, nome_morador, email_morador]
+2017-05-13 01:04:28.323  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_shrn02y9wd78ag9d5r1kuwq9o]
+2017-05-13 01:04:28.323  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_shrn02y9wd78ag9d5r1kuwq9o, uk_bgqtcr5odelryhkq584a8jaih, uk_2k0n0u4dwfcee7bi1g8ucu5t7, primary]
+2017-05-13 01:04:28.347  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_morador_ex
+2017-05-13 01:04:28.348  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [fone, ap_id, pk_id, datamudanca, nome, email]
+2017-05-13 01:04:28.348  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_ge8il04ecgruq26svta1p43lw]
+2017-05-13 01:04:28.350  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_ge8il04ecgruq26svta1p43lw, primary]
+2017-05-13 01:04:28.358  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_permission
+2017-05-13 01:04:28.359  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, role]
+2017-05-13 01:04:28.359  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.359  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_rwvnf9dhenmknvljgery79idd, primary]
+2017-05-13 01:04:28.373  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_prestador_servico
+2017-05-13 01:04:28.373  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [cpf_ps, fone_ps, funcao_ps, cep_ps, bairro_ps, numero_ps, nome_ps, logradouro_ps, uf_ps, file, localidade_ps, id_prestador_servico, mime_type, email_ps, complemento_ps, empresa_ps, rg_ps]
+2017-05-13 01:04:28.373  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.374  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_9xoev1bwilcohvw3n4p7819lv, uk_3vjbdso7n7vod50fcggk0005u, uk_8qjc6mdimxwbpmaygy9s7as7l, primary]
+2017-05-13 01:04:28.420  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_prestar_conta
+2017-05-13 01:04:28.420  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, tb_empresa, tb_valor_servico, tb_descricao, register_date, tb_funcionario]
+2017-05-13 01:04:28.420  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.420  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 01:04:28.431  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_user
+2017-05-13 01:04:28.431  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [password, pk_id, file, mime_type, name, id_user, email]
+2017-05-13 01:04:28.432  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_7uui42jkdsf7vqmrwd7iyr1sp]
+2017-05-13 01:04:28.432  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [uk_4vih17mube9j7cqyjlfbcrk4m, fk_7uui42jkdsf7vqmrwd7iyr1sp, primary]
+2017-05-13 01:04:28.443  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_user_permission
+2017-05-13 01:04:28.445  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [user_id, permission_id]
+2017-05-13 01:04:28.445  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_l6cvhr5w2r9ff429fa5eqxmyo, fk_44w3gaqxmtfvn2xslng1a5pi0]
+2017-05-13 01:04:28.446  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_l6cvhr5w2r9ff429fa5eqxmyo, primary]
+2017-05-13 01:04:28.457  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_veiculo
+2017-05-13 01:04:28.457  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [modelo_veiculo, pk_id, motorista_veiculo, ap_id_v, cnh_veiculo, cor_veiculo, placa_veiculo]
+2017-05-13 01:04:28.458  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_t4gxmpdhojdm4th1c7n6yv31c]
+2017-05-13 01:04:28.458  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_t4gxmpdhojdm4th1c7n6yv31c, primary]
+2017-05-13 01:04:28.467  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_veiculo_ex
+2017-05-13 01:04:28.468  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, ap_id_v, datamudanca, motorista, cor, cnh, modelo, placa]
+2017-05-13 01:04:28.468  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_l7gkwjmmmnb2bmknqt8f3w3s5]
+2017-05-13 01:04:28.468  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_l7gkwjmmmnb2bmknqt8f3w3s5, primary]
+2017-05-13 01:04:28.477  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.tb_vender_apartamento
+2017-05-13 01:04:28.477  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, vender_ape_user_id, valor]
+2017-05-13 01:04:28.477  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_3occdn9cbhlkqboj2ap8kvqgv]
+2017-05-13 01:04:28.477  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_3occdn9cbhlkqboj2ap8kvqgv, primary]
+2017-05-13 01:04:28.487  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: condominio.td_ocorrencia
+2017-05-13 01:04:28.487  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [pk_id, register_date, tb_registro]
+2017-05-13 01:04:28.487  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2017-05-13 01:04:28.487  INFO 5860 --- [localhost-startStop-1] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2017-05-13 01:04:28.489  INFO 5860 --- [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2017-05-13 01:04:29.855  INFO 5860 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.condominio.sj.backand.z.security.HeaderHandler@2e078e09, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ba256dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@353e84ce, org.springframework.security.web.header.HeaderWriterFilter@3057f01d, org.springframework.security.web.csrf.CsrfFilter@3fa29ef9, org.condominio.sj.backand.z.security.SecurityConfiguration$1@166616c2, org.springframework.security.web.authentication.logout.LogoutFilter@3df2e8e7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b414583, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53b50f61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@99ccea0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e4ac813, org.springframework.security.web.session.SessionManagementFilter@dab2d7b, org.springframework.security.web.access.ExceptionTranslationFilter@3841dcdd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a198e12]
+2017-05-13 01:04:31.728  INFO 5860 --- [main] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from URL [jar:file:/C:/Users/Eduardo/.m2/repository/org/springframework/integration/spring-integration-core/4.2.5.RELEASE/spring-integration-core-4.2.5.RELEASE.jar!/META-INF/spring.integration.default.properties]
+2017-05-13 01:04:31.768  INFO 5860 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-05-13 01:04:31.966  INFO 5860 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-13 01:04:31.983  INFO 5860 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-05-13 01:04:31.984  INFO 5860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-05-13 01:04:31.986  INFO 5860 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2017-05-13 01:04:31.986  INFO 5860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-05-13 01:04:32.084  INFO 5860 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-13 01:04:32.093  INFO 5860 --- [main] org.condominio.sj.backand.AppMain        : Started AppMain in 14.631 seconds (JVM running for 15.406)
+2017-05-13 01:04:41.132  INFO 5860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'

@@ -43,7 +43,7 @@
 
 
  <!--id="myFile"--> <!--ng-hide="showAddEditformulario" ng-click="show()"-->
-<!-- 
+<!-- -->
       <center  ><img ng-src="{{user.mimeType}},{{user.file}}" width="70" class="img-circle img80_80" /></center>
 
 
@@ -54,7 +54,7 @@
                    multiple app-filereader ng-change="updateLinkImage(user.file[0])" />
 
                 <br />
- -->
+ 
 
               <div>
                   <label>Apartamentos</label>
@@ -167,9 +167,9 @@
 
       <thead>
         <tr>
+          <th>Foto</th>
           <th>Name</th>
-          <th>Email</th>
-          
+          <th>Email</th>          
           <th>Setor </th>
           <th>Permissions</th>
           <th>Editar </th>
@@ -183,11 +183,11 @@
 
           <tr dir-paginate="user in users|filter:busca |orderBy:sortKey:reverse|itemsPerPage:4">
 
-
+          <td><img ng-src="{{user.mimeType}},{{user.file}}" width="50" /></td>
           <td>{{ user.name }}</td>
           <td>{{ user.email }}</td>
         
-        <td>{{ user.userid.descricao }}</td>
+          <td>{{ user.userid.descricao }}</td>
           <td>
             <div ng-repeat="permission in user.permissions">{{ permission.role | formatPermission}}</div>
           </td>

@@ -22,8 +22,8 @@ public class LoginDetailBean<puplic> extends BaseBean implements UserDetails {
 
 	private final Set<String> roles;
 
-	//private final byte[] file;
-	//private final String mimeType;
+	private final byte[] file;
+	private final String mimeType;
 	private final Long id;
 
 
@@ -31,14 +31,14 @@ public class LoginDetailBean<puplic> extends BaseBean implements UserDetails {
 
 
 
-	public LoginDetailBean(String name, String email,String passwordHash,
+	public LoginDetailBean(String name, String email,String passwordHash,byte[] file,String mimeType,
 			Long id) {
 		this.name = name;
 		this.email = email;
 		this.password = passwordHash;
 		this.roles = new HashSet<String>();
-		//this.file = file;
-		//this.mimeType = mimeType;
+		this.file = file;
+		this.mimeType = mimeType;
 		this.id = id;
 
 
@@ -84,7 +84,7 @@ public class LoginDetailBean<puplic> extends BaseBean implements UserDetails {
 	public String getEmail(){
 		return email;
 	}
-	/*
+
 	public byte[] getFile(){
 		return file;
 	}
@@ -97,7 +97,7 @@ public class LoginDetailBean<puplic> extends BaseBean implements UserDetails {
 		return id;
 	}
 
-	 */
+
 
 	@Override
 	public boolean isAccountNonExpired() {

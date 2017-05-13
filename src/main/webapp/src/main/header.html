@@ -18,15 +18,15 @@
           <div class="profile_pic"  ng-show="!authDetails.authenticated">
              <a href="#/">  <img src="resources/images/user.png" alt="..." class="img-circle profile_img"></a>
           </div>
-<!-- 
+
           <div class="profile_pic"  ng-show="authDetails.authenticated">
              <a href="#/"><img ng-src="{{authDetails.mimeType}},{{authDetails.file}}" width="40" class="img-circle profile_img" /></a>
           </div>
-     -->      
+    <!--     
           <div class="profile_pic"  ng-show="authDetails.authenticated">
              <a href="#/"><img ng-src="resources/images/condominio.jpg" width="40" class="img-circle profile_img" /></a>
           </div>
-
+ -->  
 
           <div class="profile_info" ng-show="hasAnyPermission(['ROLE_ADMIN','ROLE_FUNCIONARIO','ROLE_MORADOR','ROLE_PROPRIETARIO','ROLE_VISITANTE'])">
             <span>Welcome,</span>
@@ -176,20 +176,20 @@
               
               <!-- Para cadastrar permisões -->
              
-              <!-- Permissao 
+              <!-- Permissao  
               <li  ng-show="hasAnyPermission(['ROLE_ADMIN'])">
                 <a href="#/Permission"><i class="fa fa-edit"></i>Roles Permission <span class="fa fa-chevron-down"></span></a>
                 
               </li>
-              -->
+             -->
 
-               <!-- User Permissao
+               <!-- User Permissao 
               <li  ng-show="hasAnyPermission(['ROLE_ADMIN'])">
                 <a href="#/UserPermission"><i class="fa fa-edit"></i>Permission <span class="fa fa-chevron-down"></span></a>
                
               </li>
+              
                --> 
-               
                
                
                
@@ -261,20 +261,20 @@
 
 
 
-           <!-- 
+           
              <a href="javascript:;" class="user-profile dropdown-toggle" ng-show="authDetails.authenticated"
               data-toggle="dropdown" aria-expanded="false">
                <img ng-src="{{authDetails.mimeType}},{{authDetails.file}}" alt="">{{authDetails.name}}
                <span class=" fa fa-angle-down"></span>
              </a>
-            -->       
+     <!--            
              
              <a href="javascript:;" class="user-profile dropdown-toggle" ng-show="authDetails.authenticated"
               data-toggle="dropdown" aria-expanded="false">
                <img ng-src="resources/images/condominio.jpg" alt="">{{authDetails.name}}
                <span class=" fa fa-angle-down"></span>
              </a>
-
+-->   
 
 
             <!--Editar-->

@@ -16,6 +16,7 @@ import javax.validation.constraints.NotNull;
 import org.condominio.sj.backand.apartamento.Apartamento;
 import org.condominio.sj.backand.permission.PermissionEntity;
 import org.condominio.sj.backand.z.utils.BaseEntity;
+import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -40,13 +41,14 @@ public class UserEntity extends BaseEntity<Long> {
 
 	@Column(name = "password", length = 128, nullable = false)
 	private String password;
-	/*
-	@Lob
+
+	@Column(name = "tb_file",nullable=true)
+	@Type(type="org.hibernate.type.BinaryType")// para ler a foto no postgres do heroku
 	private byte[] file;
 
 	@Column(name = "mime_type", nullable = true)
 	private String mimeType;
-	 */
+
 	@ManyToOne
 	@JoinColumn(name = "id_user")
 	private Apartamento userid;
@@ -58,16 +60,21 @@ public class UserEntity extends BaseEntity<Long> {
 	public UserEntity() {
 	}
 
-	public UserEntity(String name, String email, String password,  Apartamento userid) {
+
+
+	public UserEntity(String name, String email, String password, byte[] file, String mimeType, Apartamento userid,
+			List<PermissionEntity> permissions) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.password = password;
-		//this.file = file;
-		//this.mimeType = mimeType;
+		this.file = file;
+		this.mimeType = mimeType;
 		this.userid = userid;
-
+		this.permissions = permissions;
 	}
+
+
 
 	public String getName() {
 		return this.name;
@@ -102,7 +109,7 @@ public class UserEntity extends BaseEntity<Long> {
 	public void setPermissions(List<PermissionEntity> permissions) {
 		this.permissions = permissions;
 	}
-	/*
+
 	public byte[] getFile() {
 		return file;
 	}
@@ -118,7 +125,7 @@ public class UserEntity extends BaseEntity<Long> {
 	public void setMimeType(String mimeType) {
 		this.mimeType = mimeType;
 	}
-	 */
+
 	public Apartamento getUserid() {
 		return userid;
 	}
@@ -126,5 +133,7 @@ public class UserEntity extends BaseEntity<Long> {
 	public void setUserid(Apartamento userid) {
 		this.userid = userid;
 	}
+
+
 
 }

@@ -30,9 +30,9 @@ angular.module('mutrack')
               id: data.principal.id,
               email: data.principal.email,
               authenticated: data.authenticated,
-              permissions: data.authorities
-             // file: data.principal.file,
-             // mimeType: data.principal.mimeType
+              permissions: data.authorities,
+              file: data.principal.file,
+              mimeType: data.principal.mimeType
 
 
              };
@@ -42,13 +42,13 @@ angular.module('mutrack')
             ngNotify.set('Bem vindo ' + data.name+ '.', 'success');
           } else {
         	  
-            $rootScope.authDetails = { name: '', authenticated: false, permissions: [] };//,file: {}
+            $rootScope.authDetails = { name: '', authenticated: false, permissions: [],file: {} };//,file: {}
             ngNotify.set('Não foi possível a conexão.', { type: 'failure', duration: 5000 });
             $location.url('/erroremail');
           }
         },
         function failure(response) {
-          $rootScope.authDetails = { name: '', authenticated: false, permissions: []};
+          $rootScope.authDetails = { name: '', authenticated: false, permissions: [],file: {}};
           ngNotify.set('Email or password that you have entered do not match our records.', { type: 'failure', duration: 5000 });
           $location.url('/erroremail');
         }
@@ -65,7 +65,7 @@ angular.module('mutrack')
 
       $http(requestParams).finally(function success(response) {
         delete $localStorage.authDetails;
-        $rootScope.authDetails = { name: '', authenticated: false, permissions: [] };
+        $rootScope.authDetails = { name: '', authenticated: false, permissions: [],file: {} };
         $location.path("/");
       });
     };
